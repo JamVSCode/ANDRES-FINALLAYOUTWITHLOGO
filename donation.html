@@ -37,29 +37,29 @@
                     </figure>
                     <div class="container">
                         <form action="https://formspree.io/f/meojoyvn" method="POST">
-                            <label for="email">Your Email:</label>
+                            <label for="email">Email:</label>
                             <input type="email" id="email" name="email" required>
 
-                            <label for="message">Message (optional):</label>
-                            <textarea id="message" name="message" rows="4"></textarea>
+                            <label for="message">Custom Message:</label>
+                            <textarea id="message" name="message"></textarea>
 
-                            <div class="donation-buttons">
-                                <button type="button" class="donation-button" onclick="setDonationAmount(10)">Donate $10</button>
-                                <button type="button" class="donation-button" onclick="setDonationAmount(25)">Donate $25</button>
-                                <button type="button" class="donation-button" onclick="setDonationAmount(50)">Donate $50</button>
-                            </div>
+                            <p>Choose a donation amount:</p>
+                            <label>
+                                <input type="radio" name="amount" value="10">
+                                $10
+                            </label>
+                            <label>
+                                <input type="radio" name="amount" value="25">
+                                $25
+                            </label>
+                            <label>
+                                <input type="radio" name="amount" value="50">
+                                $50
+                            </label>
 
-                            <input type="hidden" id="donationAmount" name="donationAmount"> <!-- Hidden input to store donation amount -->
-
-                            <button type="submit">Donate Now</button>
-                        </form>
+                            <button type="submit">Make a Donation</button>
+                            </form>
                     </div>
-                    <script>
-                        // Function to set the donation amount in the hidden input
-                        function setDonationAmount(amount) {
-                            document.getElementById('donationAmount').value = amount;
-                        }
-                    </script>
             </div>
             <div id="footer-div">
                 <p style="font-family: 'TF2 Secondary', sans-serif;">Designed by: Jam<br>
