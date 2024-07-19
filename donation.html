@@ -37,16 +37,23 @@
                     </figure>
                     <div class="container">
                         <form action="https://formspree.io/f/meojoyvn" method="POST">
-                            <label>Your email:
-                                <input type="email" name="email">
-                            </label>
-                            <label>Your message:
-                                <textarea name="message"></textarea>
-                            </label>
-                            <!-- your other form fields go here -->
-                             <button type="submit">Send</button>
-                            </form>
-                </div>
+                            <label for="email">Your Email:</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="message">Message (optional):</label>
+                            <textarea id="message" name="message" rows="4"></textarea>
+
+                            <div class="donation-buttons">
+                                <button type="button" class="donation-button" onclick="setDonationAmount(10)">Donate $10</button>
+                                <button type="button" class="donation-button" onclick="setDonationAmount(25)">Donate $25</button>
+                                <button type="button" class="donation-button" onclick="setDonationAmount(50)">Donate $50</button>
+                            </div>
+
+                            <input type="hidden" id="donationAmount" name="donationAmount"> <!-- Hidden input to store donation amount -->
+
+                            <button type="submit">Donate Now</button>
+                        </form>
+                    </div>
             </div>
             <div id="footer-div">
                 <p style="font-family: 'TF2 Secondary', sans-serif;">Designed by: Jam<br>
