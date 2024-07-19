@@ -1,16 +1,25 @@
+@import url('https://fonts.cdnfonts.com/css/tf2-build');
+@import url('https://fonts.cdnfonts.com/css/tf2-secondary');
+
 *{
     margin-top:20px;
     padding:0px;
     box-sizing:border-box;
     font-family:arial;
     border-radius:10px;
-    background-color:#f08149;
+    background-color:#34302d;
+    }
+    a{
+    color:#00b7ff
+    }
+    a:visited{
+    color:rgb(183, 0, 255);
     }
     #logo-div{
     width:87%;
     height:auto;
     min-height:50px;
-    background-color:#34302d;
+    background-color:#f08149;
     padding-left:2%;
     text-align:center;
     line-height:50px;
@@ -18,24 +27,26 @@
     float:right;
     }
     img{
-        border-radius:50px;
+    border-radius:50px;
     }
     #header-div{
     width:87%;
     min-height:100px;
     color:white;
-    background-color:#34302d;
+    background-color:#f08149;
     text-align:center;
     line-height:100px;
     margin-bottom:10px;
-    font-weight:bold;
     float:right;
+    font-size:280%;
+    text-shadow: -4px 5px 0px rgba(0, 0, 0, 1);
+    font-family: 'TF2 Build', sans-serif;
     }
     #nav-div{
     width:87%;
     min-height:30px;
     color:white;
-    background-color:#34302d;
+    background-color:#f08149;
     text-align:center;
     line-height:30px;
     font-weight:bold;
@@ -52,36 +63,40 @@
     padding:1px 16px;
     height:1000px;
     width:200px;
-    background-color:#34302d;
+    background-color:#f08149;
     position:fixed;
-    height:100%;
+    height:87%;
     overflow:auto;
+    font-weight:bold;
+    color:white;
     }
     #main-div{
     width:87%;
-    padding:5px;
+    padding-left:25px;
+    padding-right:25px;
     min-height:400px;
     color:white;
-    background-color:#34302d;
+    background-color:#f08149;
     float:right;
     text-align:center;
-    line-height:25px;
-    font-weight:bold;
+    line-height:30px;
     }
     .clearfix::after{
     content:"";
-    display:block;
+    display:table;
     clear:both;
     }
     #footer-div{
     min-height:50px;
     width:87%;
     color:white;
-    background-color:#34302d;
+    background-color:#f08149;
     text-align:center;
     line-height:50px;
-    font-weight:bold;
     float:right;
+    padding-left:25px;
+    padding-right:25px;
+    font-size:200%;
     }
     #wrapper-div{
     width:80%;
