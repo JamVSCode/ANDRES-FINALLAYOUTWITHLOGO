@@ -12,7 +12,7 @@
                 <img src="DejimaroPFFanart.png" alt="Dejimaro PFFanart logo" width="100" height="100">
             </div>
             <div id="header-div">
-                SPREADING AWARENESS ABOUT TF2...
+                THE WAR AGAINST THE BOTS IN TEAM FORTRESS 2...
             </div>
             <div id="nav-div"> 
                 <a href="index.html">Home</a>
@@ -36,28 +36,30 @@
                         <img src="FU5gyFc4ukpXNUPukhjMvD.jpg" alt="image" width="800" height="437">
                     </figure>
                     <div class="container">
-                        <form action="https://formspree.io/f/meojoyvn" method="POST">
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required>
-
-                            <label for="message">Custom Message:</label>
-                            <textarea id="message" name="message"></textarea>
-
-                            <p>Choose a donation amount:</p>
-                            <label>
+                        <script>
+                            function showThankYouMsg(){
+                                alert("Thank you for your donation! Your support for the cause will never be forgotten!");
+                            }
+                        </script>
+                        <form action="https://formspree.io/f/meojoyvn" method="POST" onsubmit="showThankYouMsg()">
+                            <label for="email" style="font-size:150%; font-family: 'TF2 Secondary', sans-serif;">Email:</label>
+                            <input type="email" id="email" name="email" style="color:white; font-size:150%; font-family: 'TF2 Secondary', sans-serif;" required><br>
+                            <label for="message" style="font-size:150%; font-family: 'TF2 Secondary', sans-serif; display:block;">Custom Message:</label>
+                            <textarea id="message" name="message" style="color:white; font-size:150%; font-family: 'TF2 Secondary', sans-serif;"></textarea>
+                            <p style="color:white; font-size:150%; font-family: 'TF2 Secondary', sans-serif;">Choose a donation amount:</p>
+                            <label style="color:white; font-size:150%; font-family: 'TF2 Secondary', sans-serif;">
                                 <input type="radio" name="amount" value="10">
                                 $10
                             </label>
-                            <label>
+                            <label style="color:white; font-size:150%; font-family: 'TF2 Secondary', sans-serif;">
                                 <input type="radio" name="amount" value="25">
                                 $25
                             </label>
-                            <label>
+                            <label style="color:white; font-size:150%; font-family: 'TF2 Secondary', sans-serif;">
                                 <input type="radio" name="amount" value="50">
                                 $50
                             </label>
-
-                            <button type="submit">Make a Donation</button>
+                            <button type="submit" style="color:white; font-size:150%; font-family: 'TF2 Secondary', sans-serif;">Make a Donation</button>
                             </form>
                     </div>
             </div>
